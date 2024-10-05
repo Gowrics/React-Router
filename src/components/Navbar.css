@@ -1,0 +1,41 @@
+.navbar {
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px; /* Add padding for a button-like effect */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and color */
+}
+
+/* Hover effect to create a button appearance */
+.navbar-link:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: blue; /* Change text color on hover */
+}
