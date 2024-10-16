@@ -9,7 +9,7 @@
   /* Header Section */
   .home-header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   
   .home-header h1 {
@@ -17,7 +17,7 @@
     color: #2c3e50;
   }
   header{
-    margin-left: 100px  ;
+    margin-left: 0px  ;
   }
   .home-header p {
     font-size: 18px;

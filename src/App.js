@@ -11,6 +11,7 @@ import CareersLayout from "./layout/CareersLayout";
 import Careers, { careerLoader } from "./screens/Careers";
 import CareerError from "./screens/CareerError";
 import CareerDetails, { jobDetailsLoader } from "./screens/CareerDetails";
+import JobApplication from "./components/JobApplication";
 const router = createBrowserRouter(
   createRoutesFromElements(
       <Route path ='/' element={<Rootlayout/>}>
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="careers" element={<CareersLayout/>}>   {/* nested route*/}
           <Route index element={<Careers/>} loader ={careerLoader} errorElement={<CareerError/>} />     {/* loader prop */}
           <Route path =':id' element={<CareerDetails/>} loader={jobDetailsLoader} errorElement={CareerError} />     {/* dianamic route */}
+          <Route path='apply/:id' element={<JobApplication />} />
       </Route>
       <Route path="*" element ={<PageNotFound/>} />
       </Route>
